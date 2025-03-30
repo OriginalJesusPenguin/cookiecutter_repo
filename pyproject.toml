@@ -27,9 +27,12 @@ dev = {file = ['requirements_dev.txt']}
 
 [tool.ruff]
 line-length = 120
-
-[tool.ruff.lint]
-select = ["I", "N", "E", "W", ]
+lint.select = ["I"]
 
 [tool.coverage.run]
 omit = ["tests/*"]
+
+[project.scripts]
+train = "rami_project.train:train"
+evaluate = "rami_project.evaluate:evaluate"
+iris = "rami_project.iris_classifier:main"
