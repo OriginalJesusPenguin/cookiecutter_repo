@@ -45,3 +45,4 @@ def visualize(model_checkpoint: str, figure_name: str = "embeddings.png") -> Non
 
 if __name__ == "__main__":
     typer.run(visualize)
+
